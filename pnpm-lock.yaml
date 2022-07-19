@@ -15,10 +15,8 @@ importers:
   packages/w-ui:
     specifiers:
       '@vitejs/plugin-vue': ^3.0.1
-      '@vitejs/plugin-vue-jsx': ^2.0.0
     dependencies:
       '@vitejs/plugin-vue': 3.0.1
-      '@vitejs/plugin-vue-jsx': 2.0.0
 
   packages/w-ui-docs:
     specifiers:
@@ -512,21 +510,6 @@ packages:
 
   /@types/web-bluetooth/0.0.14:
     resolution: {integrity: sha512-5d2RhCard1nQUC3aHcq/gHzWYO6K0WJmAbjO7mQJgCQKtZpgXxv1rOM6O/dBDhDYYVutk1sciOgNSe+5YyfM8A==}
-    dev: false
-
-  /@vitejs/plugin-vue-jsx/2.0.0:
-    resolution: {integrity: sha512-WF9ApZ/ivyyW3volQfu0Td0KNPhcccYEaRNzNY1NxRLVJQLSX0nFqquv3e2g7MF74p1XZK4bGtDL2y5i5O5+1A==}
-    engines: {node: '>=14.18.0'}
-    peerDependencies:
-      vite: ^3.0.0
-      vue: ^3.0.0
-    dependencies:
-      '@babel/core': 7.18.9
-      '@babel/plugin-syntax-import-meta': 7.10.4_@babel+core@7.18.9
-      '@babel/plugin-transform-typescript': 7.18.8_@babel+core@7.18.9
-      '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.18.9
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /@vitejs/plugin-vue-jsx/2.0.0_vite@3.0.2+vue@3.2.37:
