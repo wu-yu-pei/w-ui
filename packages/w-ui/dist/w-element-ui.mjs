@@ -1,22 +1,22 @@
-import { openBlock as c, createElementBlock as o } from "vue";
-const _ = (t) => (t.install = (n) => {
-  n.component(t.name, t);
+import { openBlock as _, createElementBlock as s, defineComponent as a, createVNode as d, createTextVNode as u } from "vue";
+const o = (t) => (t.install = (e) => {
+  e.component(t.name, t);
 }, t);
-const r = (t, n) => {
-  const e = t.__vccOpts || t;
-  for (const [s, a] of n)
-    e[s] = a;
-  return e;
-}, u = {}, d = { class: "w-button" };
-function i(t, n) {
-  return c(), o("button", d, "w-ui-bttton");
+const l = (t, e) => {
+  const n = t.__vccOpts || t;
+  for (const [c, r] of e)
+    n[c] = r;
+  return n;
+}, i = {}, f = { class: "w-button" };
+function p(t, e) {
+  return _(), s("button", f, "w-ui-bttton");
 }
-const l = /* @__PURE__ */ r(u, [["render", i], ["__scopeId", "data-v-7b1799ee"]]), b = _(l), f = {};
-function p(t, n) {
-  return c(), o("div", null, "w-ui-card");
-}
-const v = /* @__PURE__ */ r(f, [["render", p]]), h = _(v);
+const x = /* @__PURE__ */ l(i, [["render", p], ["__scopeId", "data-v-7b1799ee"]]), h = o(x), b = a({
+  render() {
+    return d("h1", null, [u("w-ui-card")]);
+  }
+}), m = o(b);
 export {
-  b as WButton,
-  h as WCard
+  h as WButton,
+  m as WCard
 };

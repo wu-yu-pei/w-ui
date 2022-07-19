@@ -1,6 +1,6 @@
 import { withInstall } from '../../utils'
 
-import Card from './index.vue'
+import Card from './index.jsx'
 
 export const WCard = withInstall(Card)
 

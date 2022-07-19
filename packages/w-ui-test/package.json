@@ -1,5 +1,5 @@
 {
-  "name": "w-ui-test",
+  "name": "@w-ui/w-ui-test",
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -1,5 +1,5 @@
 <template>
-  <div>w-ui-card</div>
+  <div class="">tag</div>
 </template>
 
 <script setup></script>

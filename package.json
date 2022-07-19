@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ui:build": "pnpm --filter=@w-ui/w-ui run build",
+    "desc:dev": "pnpm --filter=@w-ui/w-ui-docs run dev",
+    "desc:build": "pnpm --filter=@w-ui/w-ui-docs run build",
+    "desc:serve": "pnpm --filter=@w-ui/w-ui-docs run serve",
+    "test:dev": "pnpm --filter=@w-ui/w-ui-test run dev",
+    "test:build": "pnpm --filter=@w-ui/w-ui-test run build",
+    "test:preview": "pnpm --filter=@w-ui/w-ui-test run preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vitejs/plugin-vue-jsx": "^2.0.0",
     "vite": "^3.0.2",
     "vue": "^3.2.37"
   }
