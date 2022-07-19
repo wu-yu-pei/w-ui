@@ -3,15 +3,15 @@ layout: home
 
 hero:
   name: W-UI
-  text: Vite & Vue3
+  text: Vite & Vue3 & JSX
   tagline: Lorem ipsum...
   actions:
     - theme: brand
       text: 开始
-      link: /guide/what-is-vitepress
+      link: /guide/
     - theme: alt
       text: Github
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/wu-yu-pei/w-ui.git
 
 features:
   - icon: ⚡️

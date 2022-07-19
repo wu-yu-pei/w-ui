@@ -1,6 +1,6 @@
 import { withInstall } from '../../utils'
 
-import Tag from './index.vue'
+import Tag from './index.jsx'
 
 export const WTag = withInstall(Tag)
 

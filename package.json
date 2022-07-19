@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "ui:build": "pnpm --filter=@w-ui/w-ui run build",
+
     "desc:dev": "pnpm --filter=@w-ui/w-ui-docs run dev",
     "desc:build": "pnpm --filter=@w-ui/w-ui-docs run build",
     "desc:serve": "pnpm --filter=@w-ui/w-ui-docs run serve",
+
     "test:dev": "pnpm --filter=@w-ui/w-ui-test run dev",
     "test:build": "pnpm --filter=@w-ui/w-ui-test run build",
     "test:preview": "pnpm --filter=@w-ui/w-ui-test run preview"

@@ -1,10 +1,7 @@
-## Button
+import { defineComponent } from 'vue';
 
-<w-button>我是按钮</w-button>
-<w-button type="success">我是按钮</w-button>
-<w-button type="error">我是按钮</w-button>
+import { WButton } from '../../w-ui/src/index';
 
-```jsx
 export default defineComponent({
   props: ['type'],
   setup(props) {
@@ -28,4 +25,3 @@ export default defineComponent({
     );
   },
 });
-```
