@@ -2,12 +2,21 @@ import { defineComponent } from 'vue';
 import css from './style.module.css';
 
 export default defineComponent({
-  props: ['type'],
+  props: ['type', 'round', 'plain'],
   setup(props, { slots }) {
     const type = props.type
       ? `${css['w-button']} ${css[props.type]}`
       : `${css['w-button']}`;
 
-    return () => <button className={type}>{slots.default()}</button>;
-  }
+    const Shape = () => {
+      for (let key in props) {
+        if (props[key] == '') {
+          return `${type}  ${css[key]}`;
+        }
+      }
+      return type;
+    };
+
+    return () => <button className={Shape()}>{slots.default()}</button>;
+  },
 });

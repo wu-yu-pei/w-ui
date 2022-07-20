@@ -4,7 +4,7 @@ layout: home
 hero:
   name: W-UI
   text: Vite & Vue3 & JSX
-  tagline: 更快的 组件库开发体验...！
+  tagline: 更自由的组件库...
   image:
     src: /logo.svg
     alt: VitePress
