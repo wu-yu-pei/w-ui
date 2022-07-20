@@ -4,6 +4,7 @@ export default [
     items: [
       { text: 'Button', link: '/component/button' },
       { text: 'Card', link: '/component/card' },
+      { text: 'Top', link: '/component/top' },
     ],
   },
 ];

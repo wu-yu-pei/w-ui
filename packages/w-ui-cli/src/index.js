@@ -47,7 +47,7 @@ program
       case 'md':
         const mdSource = fs.readFileSync(_path('../template/base.md'), 'utf-8');
         const mdTemplate = Handlebars.compile(mdSource);
-        const res = mdTemplate({ name });
+        const res = mdTemplate({ name: bigName });
 
         fs.writeFileSync(
           `${_path(`../../w-ui-docs/docs/component/${name}.md`)}`,
@@ -73,7 +73,7 @@ program
         );
         const originConfingTemplate = Handlebars.compile(originConfingData);
         const newConfingData = originConfingTemplate({ newConfing });
-        
+
         fs.writeFileSync(
           _path('../../w-ui-docs/docs/.vitepress/sidebarConfig/component.js'),
           newConfingData.replaceAll('&#x27;', "'"),
