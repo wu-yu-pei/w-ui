@@ -1,6 +1,6 @@
-import nav from './nav.config'
-import socialLinks from './social.config'
-import sidebar from './sidebar.config'
+import nav from './nav.config';
+import socialLinks from './social.config';
+import sidebar from './sidebarConfig/index';
 
 export default {
   title: 'w-ui',
@@ -12,5 +12,4 @@ export default {
     nav,
     sidebar
   }
-}
-
+};

@@ -4,7 +4,10 @@ layout: home
 hero:
   name: W-UI
   text: Vite & Vue3 & JSX
-  tagline: Lorem ipsum...
+  tagline: 更快的 组件库开发体验...！
+  image:
+    src: /logo.svg
+    alt: VitePress
   actions:
     - theme: brand
       text: 开始
@@ -15,12 +18,12 @@ hero:
 
 features:
   - icon: ⚡️
-    title: Vite, The DX that can't be beat
-    details: Lorem ipsum...
+    title: Vue3 Vite3
+    details: 极致的开发体验
   - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
+    title: Vitepress
+    details: 更适合的文档工具
   - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+    title: commander
+    details: wui-cli 助你编写组件和文档
 ---

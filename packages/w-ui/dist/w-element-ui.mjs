@@ -1,21 +1,31 @@
-import { defineComponent as n, createVNode as e, createTextVNode as r } from "vue";
-const o = (t) => (t.install = (u) => {
-  u.component(t.name, t);
-}, t), a = n({
-  render() {
-    return e("h1", null, [r("w-ui-bttton")]);
+import { defineComponent as r, createVNode as o, createTextVNode as c } from "vue";
+const s = (t) => (t.install = (e) => {
+  e.component(t.name, t);
+}, t), a = "_success_2d2qh_9", d = "_error_2d2qh_14", n = {
+  "w-button": "_w-button_2d2qh_1",
+  success: a,
+  error: d
+}, l = r({
+  props: ["type"],
+  setup(t, {
+    slots: e
+  }) {
+    const u = t.type ? `${n["w-button"]} ${n[t.type]}` : `${n["w-button"]}`;
+    return () => o("button", {
+      className: u
+    }, [e.default()]);
   }
-}), c = o(a), l = n({
+}), i = s(l), _ = r({
   render() {
-    return e("h1", null, [r("w-ui-card")]);
+    return o("h1", null, [c("w-ui-card")]);
   }
-}), i = o(l), d = n({
+}), p = s(_), w = r({
   render() {
-    return e("h1", null, [r("w-ui-tag")]);
+    return o("h1", null, [c("w-ui-tag")]);
   }
-}), h = o(d);
+}), b = s(w);
 export {
-  c as WButton,
-  i as WCard,
-  h as WTag
+  i as WButton,
+  p as WCard,
+  b as WTag
 };

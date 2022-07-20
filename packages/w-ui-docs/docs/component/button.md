@@ -7,6 +7,7 @@
 <w-button type="error">我是按钮</w-button>
 
 ### 代码
+
 ```jsx
 export default defineComponent({
   props: ['type'],
@@ -29,6 +30,6 @@ export default defineComponent({
         </WButton>
       </>
     );
-  },
+  }
 });
 ```
