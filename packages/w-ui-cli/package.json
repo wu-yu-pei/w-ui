@@ -1,0 +1,16 @@
+{
+  "name": "w-ui-cli",
+  "version": "1.0.0",
+  "description": "w-ui的cli工具",
+  "bin": {
+    "wtool": "src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "handlebars": "^4.7.7"
+  }
+}
