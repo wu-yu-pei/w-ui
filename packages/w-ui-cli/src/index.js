@@ -23,17 +23,23 @@ program
         fs.mkdirSync(basePath)
 
         // 各个文件内容
+        const jsSource = fs.readFileSync(_path('../template/base.js'), 'utf-8')
+        const jsxSource = fs.readFileSync(_path('../template/base.jsx'), 'utf-8')
+
+        const jsTemplate = Handlebars.compile(jsSource)
+        const jsxTemplate = Handlebars.compile(jsxSource)
+
 
         // 创建三个文件
-        fs.writeFileSync(`${basePath}/index.js`, 'a')
-        fs.writeFileSync(`${basePath}/index.jsx`, 'b')
-        fs.writeFileSync(`${basePath}/style.module.css`, 'c')
+        fs.writeFileSync(`${basePath}/index.js`, jsTemplate({ name: name.split('')[0].toLocaleUpperCase() + name.slice(1) }))
+        fs.writeFileSync(`${basePath}/index.jsx`, jsxTemplate({ name }))
+        fs.writeFileSync(`${basePath}/style.module.css`, '')
 
         break;
       case 'md':
-        const source = fs.readFileSync(_path('../template/base.md'), 'utf-8')
-        const template = Handlebars.compile(source)
-        const res = template({ cname: name })
+        const mdSource = fs.readFileSync(_path('../template/base.md'), 'utf-8')
+        const mdTemplate = Handlebars.compile(mdSource)
+        const res = mdTemplate({ name })
 
         fs.writeFileSync(`${_path(`../../w-ui-docs/docs/component/${name}.md`)
           }`, res)
