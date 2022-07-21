@@ -18,8 +18,10 @@ importers:
   packages/w-ui:
     specifiers:
       '@vitejs/plugin-vue': ^3.0.1
+      classname: ^0.0.0
     dependencies:
       '@vitejs/plugin-vue': 3.0.1
+      classname: 0.0.0
 
   packages/w-ui-cli:
     specifiers:
@@ -767,6 +769,10 @@ packages:
   /chalk/5.0.1:
     resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
+
+  /classname/0.0.0:
+    resolution: {integrity: sha512-kkhsspEJdUW+VhuvNzb2sQf0KbafDPfd36dB1qf03Uu42dWZwMQzaQuyNkaRr5ir0ZiAN0+TlH/EOOfwb/aaXg==}
     dev: false
 
   /color-convert/1.9.3:
