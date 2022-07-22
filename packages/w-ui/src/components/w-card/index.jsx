@@ -1,7 +1,14 @@
 import { defineComponent } from 'vue';
-
+import './style.css';
 export default defineComponent({
-  render() {
-    return <h1>w-ui-card</h1>;
+  emits: ['title'],
+  setup(props, { slots, emit }) {
+    const content = slots.default ? slots.default() : '内容';
+    return () => (
+      <div className="w-card">
+        <h3>{props.title ? props.title : 'title'}</h3>
+        <div className="w-card-content">{content}</div>
+      </div>
+    );
   },
 });

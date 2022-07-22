@@ -1,0 +1,17 @@
+.w-card {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 4px #ccc;
+}
+
+.w-card h3 {
+  margin: 0px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.w-card .w-card-content {
+  padding: 10px;
+}
