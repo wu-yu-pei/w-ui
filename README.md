@@ -12,7 +12,7 @@
 
 ## packages介绍
 
-#### w-ui
+### w-ui
 
 > ui组件库
 
@@ -33,7 +33,7 @@ app.use(componentName)
 ```
 
 
-#### w-ui-cli
+### w-ui-cli
 
 > ui组件库的cli——wtool
 
@@ -51,10 +51,14 @@ wtool new md {componentName}
 ```
 ...
 
-#### w-ui-docs
+### w-ui-docs
 
 > ui组件库的文档
 
-#### w-ui-test
+使用vitepress搭建的文档，现在还在完善中，欢迎一起维护
+
+### w-ui-test
 
 > ui组件库的测试项目
+
+测试组件的使用
