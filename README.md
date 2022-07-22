@@ -1,7 +1,9 @@
 # W-UI组件库
 
 ## 介绍
-![logo](./logo.svg)
+<center>
+  <img src="./logo.svg"/>
+</center>
 这是一个ui组件库,项目中包含了ui组件库,ui组件库文档,ui组件库cli,ui组件库测试项目.是一个完全拥抱vue3的ui组件库
 
 ## 技术栈
